@@ -221,6 +221,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
+                        <th scope="row">IDENTIFICADOR</th>\
+                        <td>' + (feature.properties['IDENTIFICADOR'] !== null ? autolinker.link(feature.properties['IDENTIFICADOR'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
                         <th scope="row">ESTADO</th>\
                         <td>' + (feature.properties['ESTADO'] !== null ? autolinker.link(feature.properties['ESTADO'].toLocaleString()) : '') + '</td>\
                     </tr>\
@@ -231,10 +235,6 @@
                     <tr>\
                         <th scope="row">NORTE (m)</th>\
                         <td>' + (feature.properties['y'] !== null ? autolinker.link(feature.properties['y'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">IDENTIFICADOR</th>\
-                        <td>' + (feature.properties['IDENTIFICADOR'] !== null ? autolinker.link(feature.properties['IDENTIFICADOR'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">PROFUNDIDAD (m)</th>\
